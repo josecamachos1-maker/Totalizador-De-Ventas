@@ -200,9 +200,15 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "17bbb0e1650788eddaf638e576563213c5700fc3",
     "commitName": "chore: eliminar ejemplos iniciales de fizzbuzz y sumador de la anterior tarea",
     "commitTimestamp": 1788924060916,
     "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: primera funcionalidad creada Precio Neto",
+    "commitTimestamp": 1788984768516,
+    "testId": 9
   }
 ]

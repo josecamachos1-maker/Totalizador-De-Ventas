@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "17bbb0e1650788eddaf638e576563213c5700fc3",
     "author": "pochis",
     "commit": {
       "date": "2026-09-09T03:20:59.000Z",
       "message": "chore: eliminar ejemplos iniciales de fizzbuzz y sumador de la anterior tarea",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/17bbb0e1650788eddaf638e576563213c5700fc3"
     },
     "stats": {
       "total": 103,
       "additions": 0,
       "deletions": 103,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-09T20:12:47.000Z",
+      "message": "feat: primera funcionalidad creada Precio Neto",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 118,
+      "additions": 104,
+      "deletions": 14,
       "date": "2026-09-09"
     },
     "coverage": 100,

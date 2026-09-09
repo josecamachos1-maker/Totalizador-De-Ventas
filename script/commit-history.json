@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "584843c7b99a29239138145d6e636a7ec4a6a223",
     "author": "pochis",
     "commit": {
       "date": "2026-08-27T14:27:51.000Z",
       "message": "fix: ahora deberia de funciionar netli",
-      "url": "https://github.com/josecamachos1-maker/Ing-de-Software-III/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Ing-de-Software-III/commit/584843c7b99a29239138145d6e636a7ec4a6a223"
     },
     "stats": {
       "total": 17,
@@ -148,6 +148,25 @@
     },
     "coverage": 100,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-09T03:20:59.000Z",
+      "message": "chore: eliminar ejemplos iniciales de fizzbuzz y sumador de la anterior tarea",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 103,
+      "additions": 0,
+      "deletions": 103,
+      "date": "2026-09-09"
+    },
+    "coverage": 100,
+    "test_count": 1,
     "failed_tests": 0,
     "conclusion": "success"
   }

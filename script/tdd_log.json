@@ -130,9 +130,79 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "584843c7b99a29239138145d6e636a7ec4a6a223",
     "commitName": "fix: ahora deberia de funciionar netli",
     "commitTimestamp": 1787840872059,
     "testId": 7
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 1,
+    "numTotalTests": 1,
+    "timestamp": 1788875116479,
+    "success": false,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 1,
+    "numTotalTests": 1,
+    "timestamp": 1788875227885,
+    "success": false,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 1,
+    "numTotalTests": 1,
+    "timestamp": 1788875278196,
+    "success": false,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 1,
+    "numTotalTests": 1,
+    "timestamp": 1788875467257,
+    "success": false,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 0,
+    "numTotalTests": 1,
+    "timestamp": 1788875481759,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 1,
+    "numTotalTests": 1,
+    "timestamp": 1788923330659,
+    "success": false,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 0,
+    "numTotalTests": 1,
+    "timestamp": 1788923343606,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 0,
+    "numTotalTests": 1,
+    "timestamp": 1788923363066,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore: eliminar ejemplos iniciales de fizzbuzz y sumador de la anterior tarea",
+    "commitTimestamp": 1788924060916,
+    "testId": 8
   }
 ]

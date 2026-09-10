@@ -175,3 +175,16 @@ describe("ImpuestoCategoria", () => {
   });
 
 });
+
+
+describe("ImpuestoCategoria", () => {
+
+  it("Deberia aplicar 3% de impuesto adicional a Muebles", () => {
+    let totalizador = new Totalizador();
+
+  expect(
+    totalizador.ImpuestoCategoria("Muebles", 1000)
+  ).toEqual(30);
+  });
+
+});

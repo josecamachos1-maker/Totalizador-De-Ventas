@@ -118,6 +118,10 @@ class Totalizador
         {
             impuesto = 0.07;
         }
+        if(Categoria == "Muebles")
+        {
+            impuesto = 0.03;
+        }
 
         return Number((Neto * impuesto).toFixed(2));
     }

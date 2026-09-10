@@ -53,6 +53,10 @@ class Totalizador
     {
         descuento = 0.07;
     }
+    if(Neto >= 10000)
+    {
+        descuento = 0.10;
+    }
 
     return Number((Neto * descuento).toFixed(2));
     }

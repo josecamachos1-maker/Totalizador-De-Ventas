@@ -188,3 +188,15 @@ describe("ImpuestoCategoria", () => {
   });
 
 });
+
+describe("ImpuestoCategoria", () => {
+
+  it("Deberia aplicar 4% de impuesto adicional a Electronicos", () => {
+    let totalizador = new Totalizador();
+
+    expect(
+      totalizador.ImpuestoCategoria("Electronicos", 1000)
+    ).toEqual(40);
+  });
+
+});

@@ -122,6 +122,10 @@ class Totalizador
         {
             impuesto = 0.03;
         }
+        if(Categoria == "Electronicos")
+        {
+            impuesto = 0.04;
+        }
 
         return Number((Neto * impuesto).toFixed(2));
     }

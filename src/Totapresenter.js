@@ -145,8 +145,11 @@ if(peso < 0)
     ImpuestoCategoria.value =
       impuestoCategoriaCalculado.toFixed(2);
 
-    const costoEnvioCalculado = totalizador.CostoEnvio(peso);
-    CostoEnvio.value = costoEnvioCalculado.toFixed(2);
+
+
+const costoEnvioCalculado = totalizador.CostoEnvio(peso);
+
+CostoEnvio.value = costoEnvioCalculado.toFixed(2);
 
     const total =
       neto

@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "649e1b29df81a508f4e43af6d72eb02cb220d150",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T03:56:47.000Z",
       "message": "Feat: implementacion de html de descuento",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/649e1b29df81a508f4e43af6d72eb02cb220d150"
     },
     "stats": {
       "total": 28,
@@ -433,6 +433,25 @@
     },
     "coverage": 100,
     "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T03:58:54.000Z",
+      "message": "Feat: implementacion de Precio Total",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
   }

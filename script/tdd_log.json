@@ -596,9 +596,31 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "649e1b29df81a508f4e43af6d72eb02cb220d150",
     "commitName": "Feat: implementacion de html de descuento",
     "commitTimestamp": 1789012608623,
     "testId": 22
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 1,
+    "numTotalTests": 13,
+    "timestamp": 1789012629971,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1789012710530,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: implementacion de Precio Total",
+    "commitTimestamp": 1789012735289,
+    "testId": 23
   }
 ]

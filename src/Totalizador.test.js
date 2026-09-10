@@ -77,3 +77,11 @@ it("No deberia aplicar descuento si el precio neto es menor a 1000", () => {
 
   expect(totalizador.Descuento(500)).toEqual(0);
 });
+
+describe("PrecioTotal", () => {
+  it("Deberia calcular el precio total con descuento e impuesto", () => {
+    let totalizador = new Totalizador();
+
+    expect(totalizador.PrecioTotal(1000, 30, 60.63)).toEqual(1030.63);
+  });
+});

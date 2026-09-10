@@ -65,5 +65,10 @@ class Totalizador
     return Number((Neto * descuento).toFixed(2));
     }
 
+    PrecioTotal(Neto, Descuento, Impuesto)
+    {
+        return Number((Neto - Descuento + Impuesto).toFixed(2));
+    }
+
 }
 export {Totalizador}

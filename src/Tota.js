@@ -173,6 +173,11 @@ class Totalizador
 
     return 9;
 }
+CostoEnvioTotal(Cantidad, CostoUnidad)
+{
+    return Number((Cantidad * CostoUnidad).toFixed(2));
+}
+
     
 
 }

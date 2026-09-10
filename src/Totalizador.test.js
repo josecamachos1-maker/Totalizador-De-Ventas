@@ -257,3 +257,15 @@ it("Deberia tener costo de envio 9 para peso mayor a 200", () => {
 });
 
 });
+
+describe("CostoEnvioTotal", () => {
+
+  it("Deberia calcular el costo total de envio segun cantidad", () => {
+    let totalizador = new Totalizador();
+
+    expect(
+      totalizador.CostoEnvioTotal(5, 3.5)
+    ).toEqual(17.5);
+  });
+
+});

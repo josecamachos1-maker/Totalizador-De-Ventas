@@ -400,15 +400,45 @@
     "testId": 12
   },
   {
-    "commitId": "4a66c159af5541bf741df588c171f84ec1070d93",
+    "commitId": "94ab6e96141925985517bbc49ba35518b0e1443b",
     "commitName": "Se agrego impuesto para TX",
     "commitTimestamp": 1789007767347,
     "testId": 12
   },
   {
-    "commitId": "HEAD",
-    "commitName": "Feat: Se agrego impuesto para TX",
-    "commitTimestamp": 1789009078603,
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1789007810972,
+    "success": false,
     "testId": 13
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1789007829648,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1789007837071,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "de911a572b66a60a294b1fd424babd7e425d1bf0",
+    "commitName": "Feat: Se agrego impuesto para AL",
+    "commitTimestamp": 1789007868916,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: Se agrego impuesto para AL",
+    "commitTimestamp": 1789009335749,
+    "testId": 14
   }
 ]

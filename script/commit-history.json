@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "4a66c159af5541bf741df588c171f84ec1070d93",
+    "sha": "94ab6e96141925985517bbc49ba35518b0e1443b",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T02:36:06.000Z",
       "message": "Se agrego impuesto para TX",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/4a66c159af5541bf741df588c171f84ec1070d93"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/94ab6e96141925985517bbc49ba35518b0e1443b"
     },
     "stats": {
       "total": 12,
@@ -247,21 +247,40 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "de911a572b66a60a294b1fd424babd7e425d1bf0",
     "author": "pochis",
     "commit": {
-      "date": "2026-09-10T02:57:42.000Z",
-      "message": "Feat: Se agrego impuesto para TX",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "date": "2026-09-10T02:37:48.000Z",
+      "message": "Feat: Se agrego impuesto para AL",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/de911a572b66a60a294b1fd424babd7e425d1bf0"
     },
     "stats": {
-      "total": 12,
-      "additions": 11,
-      "deletions": 1,
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
       "date": "2026-09-10"
     },
     "coverage": 100,
-    "test_count": 4,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T03:02:02.000Z",
+      "message": "Feat: Se agrego impuesto para AL",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }

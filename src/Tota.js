@@ -23,6 +23,10 @@ class Totalizador
         {
             tasa = 0.0625
         }
+        if(Codigo == "AL")
+        {
+            tasa = 0.04
+        }
 
         return tasa * Neto;
     }

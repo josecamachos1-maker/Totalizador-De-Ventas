@@ -475,16 +475,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "243d62c968d07264f9a5a8e74d97605ac41779c9",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T04:08:58.000Z",
       "message": "Fix: Ya no se permite ingresar numeros negativos en productos y cantidad",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/243d62c968d07264f9a5a8e74d97605ac41779c9"
     },
     "stats": {
       "total": 47,
       "additions": 46,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T04:16:15.000Z",
+      "message": "Feat: Se agrego la funcionalidad de poder cancelar la compra",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 29,
       "deletions": 1,
       "date": "2026-09-10"
     },

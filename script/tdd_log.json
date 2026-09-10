@@ -630,9 +630,15 @@
     "testId": 24
   },
   {
-    "commitId": "HEAD",
+    "commitId": "243d62c968d07264f9a5a8e74d97605ac41779c9",
     "commitName": "Fix: Ya no se permite ingresar numeros negativos en productos y cantidad",
     "commitTimestamp": 1789013339632,
     "testId": 25
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: Se agrego la funcionalidad de poder cancelar la compra",
+    "commitTimestamp": 1789013776327,
+    "testId": 26
   }
 ]

@@ -8,6 +8,7 @@ const Impuesto = document.querySelector("#Impuesto-div");
 const Descuento = document.querySelector("#Descuento-div");
 const PrecioTotal = document.querySelector("#PrecioTotal-div");
 const Error = document.querySelector("#Error");
+const Cancelar = document.querySelector("#Cancelar-button");
 
 let totalizador = new Totalizador();
 
@@ -81,7 +82,22 @@ function mostrarResultados() {
   }
 
 }
+function cancelarCompra() 
+{
+
+  Producto.value = "";
+  Cantidad.value = "";
+
+  Estado.value = "CA";
+
+  PrecioNeto.value = "";
+  Descuento.value = "";
+  Impuesto.value = "";
+  PrecioTotal.value = "";
+
+}
 
 Producto.addEventListener("input", mostrarResultados);
 Cantidad.addEventListener("input", mostrarResultados);
 Estado.addEventListener("change", mostrarResultados);
+Cancelar.addEventListener("click", cancelarCompra);

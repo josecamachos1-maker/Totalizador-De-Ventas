@@ -8,3 +8,11 @@ describe("PrecioNeto", () => {
   });
 });
 
+describe("Impuesto", () => {
+  it("Deberia calcular el impuesto para UT", () => {
+    let totalizador = new Totalizador();
+
+    expect(totalizador.Impuesto("UT", 100)).toEqual(6.65);
+  });
+});
+

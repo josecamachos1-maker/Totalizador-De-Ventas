@@ -206,9 +206,151 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b93627213a52852bffb2648e55d933193adb5acd",
     "commitName": "feat: primera funcionalidad creada Precio Neto",
     "commitTimestamp": 1788984768516,
     "testId": 9
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 2,
+    "numTotalTests": 2,
+    "timestamp": 1788985342109,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1788985380393,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1789007076163,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1789007155236,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1789007159860,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1789007256965,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1789007263000,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1789007275666,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1789007284130,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 1,
+    "numTotalTests": 4,
+    "timestamp": 1789007309870,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1789007336306,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1789007402587,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1789007407685,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1789007423458,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1789007454258,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1789007474117,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1789007530003,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego impuesto para UT",
+    "commitTimestamp": 1789007571049,
+    "testId": 10
   }
 ]

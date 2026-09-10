@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b93627213a52852bffb2648e55d933193adb5acd",
     "author": "pochis",
     "commit": {
       "date": "2026-09-09T20:12:47.000Z",
       "message": "feat: primera funcionalidad creada Precio Neto",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/b93627213a52852bffb2648e55d933193adb5acd"
     },
     "stats": {
       "total": 118,
@@ -186,6 +186,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T02:32:50.000Z",
+      "message": "feat: Se agrego impuesto para UT",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 20,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }

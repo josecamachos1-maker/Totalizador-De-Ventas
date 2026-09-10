@@ -7,5 +7,17 @@ class Totalizador
         
     }
 
+    Impuesto(Codigo, Neto)
+    {
+        let tasa = 0;
+        
+        if(Codigo == "UT")
+        {
+            tasa = 0.0665;
+        }
+
+        return tasa * Neto;
+    }
+
 }
 export {Totalizador}

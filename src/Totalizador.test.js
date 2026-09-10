@@ -296,4 +296,12 @@ it("Deberia aplicar 1.5% de descuento al envio para cliente Especial", () => {
   ).toEqual(1.5);
 });
 
+it("Deberia aplicar 0% de descuento al envio para cliente Normal", () => {
+  let totalizador = new Totalizador();
+
+  expect(
+    totalizador.DescuentoEnvioCliente("Normal", 100)
+  ).toEqual(0);
+});
+
 });

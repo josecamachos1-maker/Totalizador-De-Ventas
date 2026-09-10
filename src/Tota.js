@@ -186,6 +186,11 @@ DescuentoEnvioCliente(TipoCliente, CostoEnvio)
         descuento = 0.005;
     }
 
+    if(TipoCliente == "Antiguo Recurrente")
+{
+    descuento = 0.01;
+}
+
     return Number((CostoEnvio * descuento).toFixed(2));
 }
     

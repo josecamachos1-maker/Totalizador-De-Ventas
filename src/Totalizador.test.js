@@ -280,4 +280,12 @@ describe("DescuentoEnvioCliente", () => {
     ).toEqual(0.5);
   });
 
+  it("Deberia aplicar 1% de descuento al envio para cliente Antiguo Recurrente", () => {
+  let totalizador = new Totalizador();
+
+  expect(
+    totalizador.DescuentoEnvioCliente("Antiguo Recurrente", 100)
+  ).toEqual(1);
+});
+
 });

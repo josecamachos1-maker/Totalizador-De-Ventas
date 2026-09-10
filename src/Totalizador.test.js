@@ -269,3 +269,15 @@ describe("CostoEnvioTotal", () => {
   });
 
 });
+
+describe("DescuentoEnvioCliente", () => {
+
+  it("Deberia aplicar 0.5% de descuento al envio para cliente Recurrente", () => {
+    let totalizador = new Totalizador();
+
+    expect(
+      totalizador.DescuentoEnvioCliente("Recurrente", 100)
+    ).toEqual(0.5);
+  });
+
+});

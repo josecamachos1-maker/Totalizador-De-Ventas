@@ -177,7 +177,17 @@ CostoEnvioTotal(Cantidad, CostoUnidad)
 {
     return Number((Cantidad * CostoUnidad).toFixed(2));
 }
+DescuentoEnvioCliente(TipoCliente, CostoEnvio)
+{
+    let descuento = 0;
 
+    if(TipoCliente == "Recurrente")
+    {
+        descuento = 0.005;
+    }
+
+    return Number((CostoEnvio * descuento).toFixed(2));
+}
     
 
 }

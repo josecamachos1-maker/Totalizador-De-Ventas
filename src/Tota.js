@@ -102,6 +102,10 @@ class Totalizador
         {
             descuento = 0.015;
         }
+        if(Categoria == "Electronicos")
+        {
+            descuento = 0.01;
+        }
 
         return Number((Neto * descuento).toFixed(2));
         

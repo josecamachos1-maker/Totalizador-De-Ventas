@@ -762,9 +762,31 @@
     "testId": 31
   },
   {
-    "commitId": "HEAD",
+    "commitId": "da0c26bc9f225d74cd2afd993526d805486120b3",
     "commitName": "Agregando funcionalidad de Descuento por categoria de Material de escritorio",
     "commitTimestamp": 1789016247052,
     "testId": 31
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 1,
+    "numTotalTests": 22,
+    "timestamp": 1789016271406,
+    "success": false,
+    "testId": 32
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1789016293255,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Agregando funcionalidad de Descuento por categoria de Electronicos",
+    "commitTimestamp": 1789016304609,
+    "testId": 32
   }
 ]

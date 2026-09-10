@@ -589,12 +589,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "da0c26bc9f225d74cd2afd993526d805486120b3",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T04:57:26.000Z",
       "message": "Agregando funcionalidad de Descuento por categoria de Material de escritorio",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/da0c26bc9f225d74cd2afd993526d805486120b3"
     },
     "stats": {
       "total": 14,
@@ -604,6 +604,25 @@
     },
     "coverage": 100,
     "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T04:58:23.000Z",
+      "message": "Agregando funcionalidad de Descuento por categoria de Electronicos",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 22,
     "failed_tests": 0,
     "conclusion": "success"
   }

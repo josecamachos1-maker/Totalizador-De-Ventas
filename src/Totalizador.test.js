@@ -147,3 +147,11 @@ it("Deberia aplicar 1.5% de descuento adicional a Material de escritorio", () =>
     totalizador.DescuentoCategoria("Material de escritorio", 1000)
   ).toEqual(15);
 });
+
+it("Deberia aplicar 1% de descuento adicional a Electronicos", () => {
+  let totalizador = new Totalizador();
+
+  expect(
+    totalizador.DescuentoCategoria("Electronicos", 1000)
+  ).toEqual(10);
+});

@@ -430,15 +430,37 @@
     "testId": 13
   },
   {
-    "commitId": "de911a572b66a60a294b1fd424babd7e425d1bf0",
+    "commitId": "f255cf01eec64537a4bd1e6149da5297c6e9f5fe",
     "commitName": "Feat: Se agrego impuesto para AL",
     "commitTimestamp": 1789007868916,
     "testId": 13
   },
   {
-    "commitId": "HEAD",
-    "commitName": "Feat: Se agrego impuesto para AL",
-    "commitTimestamp": 1789009335749,
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1789007957049,
+    "success": false,
     "testId": 14
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1789007976247,
+    "success": true,
+    "testId": 14
+  },
+  {
+    "commitId": "2509de5c229e7d344cc03efdf1882e7ea94af586",
+    "commitName": "feat: Se agrego impuesto para CA",
+    "commitTimestamp": 1789008000206,
+    "testId": 14
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: Se agrego impuesto para CA",
+    "commitTimestamp": 1789009440022,
+    "testId": 15
   }
 ]

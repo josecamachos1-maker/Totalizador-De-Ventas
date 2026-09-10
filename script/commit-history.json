@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "de911a572b66a60a294b1fd424babd7e425d1bf0",
+    "sha": "f255cf01eec64537a4bd1e6149da5297c6e9f5fe",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T02:37:48.000Z",
       "message": "Feat: Se agrego impuesto para AL",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/de911a572b66a60a294b1fd424babd7e425d1bf0"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/f255cf01eec64537a4bd1e6149da5297c6e9f5fe"
     },
     "stats": {
       "total": 10,
@@ -266,21 +266,40 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2509de5c229e7d344cc03efdf1882e7ea94af586",
     "author": "pochis",
     "commit": {
-      "date": "2026-09-10T03:02:02.000Z",
-      "message": "Feat: Se agrego impuesto para AL",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "date": "2026-09-10T02:39:59.000Z",
+      "message": "feat: Se agrego impuesto para CA",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/2509de5c229e7d344cc03efdf1882e7ea94af586"
     },
     "stats": {
-      "total": 10,
-      "additions": 10,
+      "total": 9,
+      "additions": 9,
       "deletions": 0,
       "date": "2026-09-10"
     },
     "coverage": 100,
-    "test_count": 5,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T03:03:53.000Z",
+      "message": "feat: Se agrego impuesto para CA",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

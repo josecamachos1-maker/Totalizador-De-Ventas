@@ -34,3 +34,8 @@ it("Deberia calcular el impuesto para AL", () => {
   expect(totalizador.Impuesto("AL", 100)).toEqual(4);
 });
 
+it("Deberia calcular el impuesto para CA", () => {
+  let totalizador = new Totalizador();
+
+  expect(totalizador.Impuesto("CA", 100)).toEqual(8.25);
+});

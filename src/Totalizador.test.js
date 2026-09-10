@@ -305,3 +305,31 @@ it("Deberia aplicar 0% de descuento al envio para cliente Normal", () => {
 });
 
 });
+
+describe("DescuentoEspecialCliente", () => {
+
+  it("Deberia aplicar 100 de descuento a cliente Recurrente con Alimentos y precio mayor a 3000", () => {
+    let totalizador = new Totalizador();
+
+    expect(
+      totalizador.DescuentoEspecialCliente(
+        "Recurrente",
+        3001,
+        "Alimentos"
+      )
+    ).toEqual(100);
+  });
+
+});
+
+it("No deberia aplicar descuento recurrente si el precio es exactamente 3000", () => {
+  let totalizador = new Totalizador();
+
+  expect(
+    totalizador.DescuentoEspecialCliente(
+      "Recurrente",
+      3000,
+      "Alimentos"
+    )
+  ).toEqual(0);
+});

@@ -197,6 +197,22 @@ if(TipoCliente == "Especial")
 
     return Number((CostoEnvio * descuento).toFixed(2));
 }
+
+DescuentoEspecialCliente(TipoCliente, Neto, Categoria)
+{
+    let descuento = 0;
+
+    if(
+        TipoCliente == "Recurrente" &&
+        Neto > 3000 &&
+        Categoria == "Alimentos"
+    )
+    {
+        descuento = 100;
+    }
+
+    return descuento;
+}
     
 
 }

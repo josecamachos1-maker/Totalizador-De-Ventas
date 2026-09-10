@@ -582,9 +582,23 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c6240ce43407749e5587767b53fd3510b0b2e2c4",
     "commitName": "Feat: Agregando descuento del 15% al precio de 30000",
     "commitTimestamp": 1789011932622,
     "testId": 21
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1789011964063,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: implementacion de html de descuento",
+    "commitTimestamp": 1789012608623,
+    "testId": 22
   }
 ]

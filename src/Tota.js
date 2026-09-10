@@ -72,12 +72,22 @@ class Totalizador
 
     ValidarDatos(precio, cantidad)
     {
+
     if(Number.isNaN(precio) || Number.isNaN(cantidad))
     {
         return false;
     }
 
     return true;
+    }
+    PuedeConfirmar(precio, cantidad)
+    {
+        if(precio > 0 && cantidad > 0)
+        {
+            return true;
+        }
+
+        return false;
     }
 
 }

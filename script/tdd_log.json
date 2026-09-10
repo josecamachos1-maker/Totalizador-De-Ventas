@@ -674,9 +674,47 @@
     "testId": 27
   },
   {
-    "commitId": "HEAD",
+    "commitId": "722a7c6177f9ffa4a269ea9346e2da6ec5c84f0f",
     "commitName": "feat: agregando funcionalidad si los valores ingresados son incorectos",
     "commitTimestamp": 1789014112555,
     "testId": 27
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1789014170102,
+    "success": false,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1789014201950,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1789014215694,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1789014223364,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: agregando funcionalidad para confirmar compra",
+    "commitTimestamp": 1789014270217,
+    "testId": 28
   }
 ]

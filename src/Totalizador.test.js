@@ -107,3 +107,25 @@ it("Deberia aceptar precio y cantidad validos", () => {
 
   expect(totalizador.ValidarDatos(20, 3)).toEqual(true);
 });
+
+describe("ConfirmarCompra", () => {
+
+  it("Deberia permitir confirmar una compra con datos validos", () => {
+    let totalizador = new Totalizador();
+
+    expect(totalizador.PuedeConfirmar(20, 3)).toEqual(true);
+  });
+
+});
+
+it("No deberia permitir confirmar una compra con datos invalidos", () => {
+  let totalizador = new Totalizador();
+
+  expect(totalizador.PuedeConfirmar(-20, 3)).toEqual(false);
+});
+
+it("No deberia permitir confirmar una compra con cantidad invalida", () => {
+  let totalizador = new Totalizador();
+
+  expect(totalizador.PuedeConfirmar(20, 0)).toEqual(false);
+});

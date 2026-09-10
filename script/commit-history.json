@@ -456,17 +456,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f736b5732a4c92599e7abe944c8e47b8c38e0ace",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T04:01:13.000Z",
       "message": "Feat: implementacion de html de Precio total",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/f736b5732a4c92599e7abe944c8e47b8c38e0ace"
     },
     "stats": {
       "total": 19,
       "additions": 19,
       "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T04:08:58.000Z",
+      "message": "Fix: Ya no se permite ingresar numeros negativos en productos y cantidad",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 47,
+      "additions": 46,
+      "deletions": 1,
       "date": "2026-09-10"
     },
     "coverage": 100,

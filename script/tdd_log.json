@@ -624,9 +624,15 @@
     "testId": 23
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f736b5732a4c92599e7abe944c8e47b8c38e0ace",
     "commitName": "Feat: implementacion de html de Precio total",
     "commitTimestamp": 1789012874707,
     "testId": 24
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Fix: Ya no se permite ingresar numeros negativos en productos y cantidad",
+    "commitTimestamp": 1789013339632,
+    "testId": 25
   }
 ]

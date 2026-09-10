@@ -62,3 +62,9 @@ label{
     padding: 10px 20px;
     font-size: 20px;
 }
+#Error{
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: red;
+}

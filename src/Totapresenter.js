@@ -7,6 +7,7 @@ const Estado = document.querySelector("#Estado-codigo");
 const Impuesto = document.querySelector("#Impuesto-div");
 const Descuento = document.querySelector("#Descuento-div");
 const PrecioTotal = document.querySelector("#PrecioTotal-div");
+const Error = document.querySelector("#Error");
 
 let totalizador = new Totalizador();
 
@@ -15,6 +16,42 @@ function mostrarResultados() {
   const precio = Number.parseFloat(Producto.value);
   const cantidad = Number.parseInt(Cantidad.value);
   const codigo = Estado.value;
+
+  Error.textContent = "";
+
+  if(precio <= 0 && cantidad <= 0)
+  {
+    Error.textContent = "El precio y cantidad debe ser mayor a 0.";
+
+    PrecioNeto.value = "";
+    Descuento.value = "";
+    Impuesto.value = "";
+    PrecioTotal.value = "";
+
+    return;
+  }
+
+  if (precio <= 0) {
+    Error.textContent = "El precio debe ser mayor a 0.";
+
+    PrecioNeto.value = "";
+    Descuento.value = "";
+    Impuesto.value = "";
+    PrecioTotal.value = "";
+
+    return;
+  }
+
+  if (cantidad <= 0) {
+    Error.textContent = "La cantidad debe ser mayor a 0.";
+
+    PrecioNeto.value = "";
+    Descuento.value = "";
+    Impuesto.value = "";
+    PrecioTotal.value = "";
+
+    return;
+  }
 
   if (!isNaN(precio) && !isNaN(cantidad)) {
 
@@ -31,7 +68,7 @@ function mostrarResultados() {
       precioConDescuento
     );
     Impuesto.value = impuestoCalculado.toFixed(2);
-    
+
     const total = totalizador.PrecioTotal(
       neto,
       descuentoCalculado,

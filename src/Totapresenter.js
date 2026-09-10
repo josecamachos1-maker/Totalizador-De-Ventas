@@ -20,7 +20,7 @@ const CostoEnvioTotal = document.querySelector("#CostoEnvioTotal-div");
 const TipoCliente = document.querySelector("#TipoCliente-select");
 const DescuentoEnvio = document.querySelector("#DescuentoEnvio-div");
 const CostoEnvioFinal = document.querySelector("#CostoEnvioFinal-div");
-
+const DescuentoEspecial = document.querySelector("#DescuentoEspecial-div");
 let totalizador = new Totalizador();
 
 function mostrarResultados() {
@@ -53,6 +53,7 @@ function mostrarResultados() {
 DescuentoEnvio.value = "";
 CostoEnvioFinal.value = "";
 CostoEnvioTotal.value = "";
+DescuentoEspecial.value = "";
 
     return;
   }
@@ -73,6 +74,7 @@ CostoEnvioTotal.value = "";
 
 DescuentoEnvio.value = "";
 CostoEnvioFinal.value = "";
+DescuentoEspecial.value = "";
 CostoEnvioTotal.value = "";
 
     return;
@@ -94,6 +96,7 @@ CostoEnvioTotal.value = "";
 DescuentoEnvio.value = "";
 CostoEnvioFinal.value = "";
 CostoEnvioTotal.value = "";
+DescuentoEspecial.value = "";
 
     return;
   }
@@ -114,6 +117,7 @@ TipoCliente.value = "Normal";
 DescuentoEnvio.value = "";
 CostoEnvioFinal.value = "";
 CostoEnvioTotal.value = "";
+DescuentoEspecial.value = "";
     return;
   }
   if (!Number.isInteger(cantidad))
@@ -133,7 +137,7 @@ CostoEnvioTotal.value = "";
 DescuentoEnvio.value = "";
 CostoEnvioFinal.value = "";
 CostoEnvioTotal.value = "";
-
+DescuentoEspecial.value = "";
   return;
  }
  if(Peso.value === "" || isNaN(peso))
@@ -160,12 +164,26 @@ if(peso < 0)
     const descuentoCategoriaCalculado =
     totalizador.DescuentoCategoria(categoria, neto);
 
+    const descuentoEspecialCalculado =
+  totalizador.DescuentoEspecialCliente(
+    tipoCliente,
+    neto,
+    categoria
+  );
+
+DescuentoEspecial.value =
+  descuentoEspecialCalculado.toFixed(2);
+
     DescuentoCategoria.value =
       descuentoCategoriaCalculado.toFixed(2);
 
     const descuentoCalculado = totalizador.Descuento(neto);
     Descuento.value = descuentoCalculado.toFixed(2);
-    const precioConDescuento = neto - descuentoCalculado - descuentoCategoriaCalculado;
+    const precioConDescuento =
+  neto
+  - descuentoCalculado
+  - descuentoCategoriaCalculado
+  - descuentoEspecialCalculado;
 
     const impuestoCalculado = totalizador.Impuesto(
       codigo,
@@ -207,10 +225,13 @@ const costoEnvioFinalCalculado =
 CostoEnvioFinal.value =
   costoEnvioFinalCalculado.toFixed(2);
 
+  
+
     const total =
   neto
   - descuentoCalculado
   - descuentoCategoriaCalculado
+  - descuentoEspecialCalculado
   + impuestoCalculado
   + impuestoCategoriaCalculado
   + costoEnvioFinalCalculado;
@@ -246,6 +267,8 @@ function cancelarCompra()
 DescuentoEnvio.value = "";
 CostoEnvioFinal.value = "";
 CostoEnvioTotal.value = "";
+
+DescuentoEspecial.value = "";
 
   Confirmar.disabled = false;
 }

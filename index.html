@@ -49,6 +49,17 @@
       <input type="number" id="Peso-numero" min="0" step="0.01"/>
     </section>
 
+    <section id="TipoCliente">
+  <label for="TipoCliente-select">Tipo de cliente:</label>
+
+  <select id="TipoCliente-select">
+    <option value="Normal" selected>Normal</option>
+    <option value="Recurrente">Recurrente</option>
+    <option value="Antiguo Recurrente">Antiguo Recurrente</option>
+    <option value="Especial">Especial</option>
+  </select>
+</section>
+
     <section id="Botones">
       <button type="button" id="Cancelar-button">Cancelar compra</button>
       <button type="button" id="Confirmar-button">Confirmar compra</button>
@@ -91,6 +102,16 @@
       <section>
   <label for="CostoEnvioTotal-div">Costo total de envío:</label>
   <input type="text" id="CostoEnvioTotal-div" readonly>
+</section>
+
+<section>
+  <label for="DescuentoEnvio-div">Descuento en envío:</label>
+  <input type="text" id="DescuentoEnvio-div" readonly>
+</section>
+
+<section>
+  <label for="CostoEnvioFinal-div">Costo de envío final:</label>
+  <input type="text" id="CostoEnvioFinal-div" readonly>
 </section>
 
 

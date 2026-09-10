@@ -128,3 +128,22 @@ label{
     padding: 10px 20px;
     font-size: 20px;
 }
+#TipoCliente-select{
+    margin-top: 10px;
+    margin-left: 180px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+#DescuentoEnvio-div{
+    margin-top: 10px;
+    margin-left: 130px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+#CostoEnvioFinal-div{
+    margin-top: 10px;
+    margin-left: 130px;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}

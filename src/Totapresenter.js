@@ -17,6 +17,9 @@ const ImpuestoCategoria = document.querySelector("#ImpuestoCategoria-div");
 const Peso = document.querySelector("#Peso-numero");
 const CostoEnvio = document.querySelector("#CostoEnvio-div");
 const CostoEnvioTotal = document.querySelector("#CostoEnvioTotal-div");
+const TipoCliente = document.querySelector("#TipoCliente-select");
+const DescuentoEnvio = document.querySelector("#DescuentoEnvio-div");
+const CostoEnvioFinal = document.querySelector("#CostoEnvioFinal-div");
 
 let totalizador = new Totalizador();
 
@@ -30,6 +33,7 @@ function mostrarResultados() {
   const cantidad = Number(Cantidad.value);
   const codigo = Estado.value;
   const categoria = Categoria.value;
+  const tipoCliente = TipoCliente.value;
 
   Error.textContent = "";
 
@@ -44,6 +48,11 @@ function mostrarResultados() {
     PrecioTotal.value = "";
     CostoEnvio.value = "";
     CostoEnvioTotal.value = "";
+    TipoCliente.value = "Normal";
+
+DescuentoEnvio.value = "";
+CostoEnvioFinal.value = "";
+CostoEnvioTotal.value = "";
 
     return;
   }
@@ -60,6 +69,11 @@ function mostrarResultados() {
     ImpuestoCategoria.value = "";
     CostoEnvio.value = "";
     CostoEnvioTotal.value = "";
+    TipoCliente.value = "Normal";
+
+DescuentoEnvio.value = "";
+CostoEnvioFinal.value = "";
+CostoEnvioTotal.value = "";
 
     return;
   }
@@ -75,6 +89,11 @@ function mostrarResultados() {
     ImpuestoCategoria.value = "";
     CostoEnvio.value = "";
     CostoEnvioTotal.value = "";
+    TipoCliente.value = "Normal";
+
+DescuentoEnvio.value = "";
+CostoEnvioFinal.value = "";
+CostoEnvioTotal.value = "";
 
     return;
   }
@@ -90,7 +109,11 @@ function mostrarResultados() {
     ImpuestoCategoria.value = "";
     CostoEnvio.value = "";
     CostoEnvioTotal.value = "";
+TipoCliente.value = "Normal";
 
+DescuentoEnvio.value = "";
+CostoEnvioFinal.value = "";
+CostoEnvioTotal.value = "";
     return;
   }
   if (!Number.isInteger(cantidad))
@@ -105,6 +128,11 @@ function mostrarResultados() {
   ImpuestoCategoria.value = "";
   CostoEnvio.value = "";
   CostoEnvioTotal.value = "";
+  TipoCliente.value = "Normal";
+
+DescuentoEnvio.value = "";
+CostoEnvioFinal.value = "";
+CostoEnvioTotal.value = "";
 
   return;
  }
@@ -164,12 +192,28 @@ CostoEnvioTotal.value =
   costoEnvioTotalCalculado.toFixed(2);
 
 
+  const descuentoEnvioCalculado =
+  totalizador.DescuentoEnvioCliente(
+    tipoCliente,
+    costoEnvioTotalCalculado
+  );
+
+DescuentoEnvio.value =
+  descuentoEnvioCalculado.toFixed(2);
+
+const costoEnvioFinalCalculado =
+  costoEnvioTotalCalculado - descuentoEnvioCalculado;
+
+CostoEnvioFinal.value =
+  costoEnvioFinalCalculado.toFixed(2);
+
     const total =
-      neto
-      - descuentoCalculado
-      - descuentoCategoriaCalculado
-      + impuestoCalculado
-      + impuestoCategoriaCalculado;
+  neto
+  - descuentoCalculado
+  - descuentoCategoriaCalculado
+  + impuestoCalculado
+  + impuestoCategoriaCalculado
+  + costoEnvioFinalCalculado;
 
     PrecioTotal.value = total.toFixed(2);
 
@@ -196,6 +240,12 @@ function cancelarCompra()
   Peso.value = "";
   CostoEnvio.value = "";
   CostoEnvioTotal.value = "";
+
+  TipoCliente.value = "Normal";
+
+DescuentoEnvio.value = "";
+CostoEnvioFinal.value = "";
+CostoEnvioTotal.value = "";
 
   Confirmar.disabled = false;
 }
@@ -226,3 +276,4 @@ Cancelar.addEventListener("click", cancelarCompra);
 Confirmar.addEventListener("click", confirmarCompra);
 Categoria.addEventListener("change", mostrarResultados);
 Peso.addEventListener("input", mostrarResultados);
+TipoCliente.addEventListener("change", mostrarResultados);

@@ -712,9 +712,15 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "16b9c825225aa70d30742084f77fb3610056dac1",
     "commitName": "Feat: agregando funcionalidad para confirmar compra",
     "commitTimestamp": 1789014270217,
     "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: agregando funcionalidad para confirmar compra en html",
+    "commitTimestamp": 1789014723698,
+    "testId": 29
   }
 ]

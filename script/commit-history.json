@@ -532,17 +532,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "16b9c825225aa70d30742084f77fb3610056dac1",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T04:24:29.000Z",
       "message": "Feat: agregando funcionalidad para confirmar compra",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/16b9c825225aa70d30742084f77fb3610056dac1"
     },
     "stats": {
       "total": 32,
       "additions": 32,
       "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T04:32:02.000Z",
+      "message": "Feat: agregando funcionalidad para confirmar compra en html",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 42,
+      "additions": 41,
+      "deletions": 1,
       "date": "2026-09-10"
     },
     "coverage": 100,

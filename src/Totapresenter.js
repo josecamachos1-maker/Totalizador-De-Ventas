@@ -9,6 +9,8 @@ const Descuento = document.querySelector("#Descuento-div");
 const PrecioTotal = document.querySelector("#PrecioTotal-div");
 const Error = document.querySelector("#Error");
 const Cancelar = document.querySelector("#Cancelar-button");
+const Confirmar = document.querySelector("#Confirmar-button");
+const MensajeConfirmacion = document.querySelector("#Mensaje-confirmacion");
 
 let totalizador = new Totalizador();
 
@@ -95,9 +97,31 @@ function cancelarCompra()
   Impuesto.value = "";
   PrecioTotal.value = "";
 
+  MensajeConfirmacion.textContent = "";
+  Confirmar.disabled = false;
+}
+
+function confirmarCompra()
+{
+  const precio = Number.parseFloat(Producto.value);
+  const cantidad = Number(Cantidad.value);
+
+  if(precio > 0 && cantidad > 0)
+  {
+    MensajeConfirmacion.textContent =
+      "Compra confirmada. Total: $" + PrecioTotal.value;
+
+    Confirmar.disabled = true;
+  }
+  else
+  {
+    MensajeConfirmacion.textContent =
+      "No se puede confirmar la compra.";
+  }
 }
 
 Producto.addEventListener("input", mostrarResultados);
 Cantidad.addEventListener("input", mostrarResultados);
 Estado.addEventListener("change", mostrarResultados);
 Cancelar.addEventListener("click", cancelarCompra);
+Confirmar.addEventListener("click", confirmarCompra);

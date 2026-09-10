@@ -333,3 +333,37 @@ it("No deberia aplicar descuento recurrente si el precio es exactamente 3000", (
     )
   ).toEqual(0);
 });
+
+it("Deberia aplicar 200 de descuento a cliente Especial con Electronicos y precio mayor a 7000", () => {
+  let totalizador = new Totalizador();
+
+  expect(
+    totalizador.DescuentoEspecialCliente(
+      "Especial",
+      7001,
+      "Electronicos"
+    )
+  ).toEqual(200);
+});
+it("No deberia aplicar descuento especial si el precio es exactamente 7000", () => {
+  let totalizador = new Totalizador();
+
+  expect(
+    totalizador.DescuentoEspecialCliente(
+      "Especial",
+      7000,
+      "Electronicos"
+    )
+  ).toEqual(0);
+});
+it("No deberia aplicar descuento si la categoria no corresponde", () => {
+  let totalizador = new Totalizador();
+
+  expect(
+    totalizador.DescuentoEspecialCliente(
+      "Recurrente",
+      5000,
+      "Electronicos"
+    )
+  ).toEqual(0);
+});

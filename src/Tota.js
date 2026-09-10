@@ -210,6 +210,14 @@ DescuentoEspecialCliente(TipoCliente, Neto, Categoria)
     {
         descuento = 100;
     }
+    if(
+        TipoCliente == "Especial" &&
+        Neto > 7000 &&
+        Categoria == "Electronicos"
+    )
+    {
+        descuento = 200;
+    }
 
     return descuento;
 }

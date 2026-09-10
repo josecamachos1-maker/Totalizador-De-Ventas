@@ -11,6 +11,9 @@ const Error = document.querySelector("#Error");
 const Cancelar = document.querySelector("#Cancelar-button");
 const Confirmar = document.querySelector("#Confirmar-button");
 const MensajeConfirmacion = document.querySelector("#Mensaje-confirmacion");
+const Categoria = document.querySelector("#Categoria-producto");
+const DescuentoCategoria = document.querySelector("#DescuentoCategoria-div");
+const ImpuestoCategoria = document.querySelector("#ImpuestoCategoria-div");
 
 let totalizador = new Totalizador();
 
@@ -19,6 +22,7 @@ function mostrarResultados() {
   const precio = Number.parseFloat(Producto.value);
   const cantidad = Number.parseInt(Cantidad.value);
   const codigo = Estado.value;
+  const categoria = Categoria.value;
 
   Error.textContent = "";
 
@@ -62,9 +66,19 @@ function mostrarResultados() {
 
     PrecioNeto.value = neto.toFixed(2);
 
+    const descuentoCategoriaCalculado =
+    totalizador.DescuentoCategoria(categoria, neto);
+
+    DescuentoCategoria.value =
+      descuentoCategoriaCalculado.toFixed(2);
+
     const descuentoCalculado = totalizador.Descuento(neto);
     Descuento.value = descuentoCalculado.toFixed(2);
     const precioConDescuento = neto - descuentoCalculado;
+
+    
+
+    
 
     const impuestoCalculado = totalizador.Impuesto(
       codigo,
@@ -79,6 +93,7 @@ function mostrarResultados() {
     );
 
     PrecioTotal.value = total.toFixed(2);
+
     
 
   }

@@ -90,3 +90,21 @@ label{
     font-size: 30px;
     color: black;
 }
+#Categoria-producto{
+    margin-top: 10px;
+    margin-left: 100px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+#DescuentoCategoria-div{
+    margin-top: 10px;
+    margin-left: 87px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+#ImpuestoCategoria-div{
+    margin-top: 10px;
+    margin-left: 105px;
+    padding: 10px 20px;
+    font-size: 20px;
+}

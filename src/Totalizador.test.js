@@ -249,4 +249,11 @@ it("Deberia tener costo de envio 8 para peso entre 101 y 200", () => {
 
   expect(totalizador.CostoEnvio(200)).toEqual(8);
 });
+
+it("Deberia tener costo de envio 9 para peso mayor a 200", () => {
+  let totalizador = new Totalizador();
+
+  expect(totalizador.CostoEnvio(201)).toEqual(9);
+});
+
 });

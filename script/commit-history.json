@@ -285,17 +285,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f70dcb9b186e27e6f377890e94fc6d63dae545ce",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T03:03:53.000Z",
       "message": "feat: Se agrego impuesto para CA",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/f70dcb9b186e27e6f377890e94fc6d63dae545ce"
     },
     "stats": {
       "total": 9,
       "additions": 9,
       "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T03:33:07.000Z",
+      "message": "Feat: Agregando html y funcionalidad de impuestos",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 64,
+      "additions": 56,
+      "deletions": 8,
       "date": "2026-09-10"
     },
     "coverage": 100,

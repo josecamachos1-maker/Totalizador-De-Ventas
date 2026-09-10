@@ -458,9 +458,15 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f70dcb9b186e27e6f377890e94fc6d63dae545ce",
     "commitName": "feat: Se agrego impuesto para CA",
     "commitTimestamp": 1789009440022,
     "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: Agregando html y funcionalidad de impuestos",
+    "commitTimestamp": 1789011187908,
+    "testId": 16
   }
 ]

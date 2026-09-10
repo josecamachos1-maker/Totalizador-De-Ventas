@@ -17,7 +17,11 @@ class Totalizador
         }
         if(Codigo == "NV")
         {
-            tasa = 0.08
+            tasa = 0.08;
+        }
+        if(Codigo == "TX")
+        {
+            tasa = 0.0625
         }
 
         return tasa * Neto;

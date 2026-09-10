@@ -560,9 +560,31 @@
     "testId": 20
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f287bd3f6bc6fb2a486c148875b2b0652eda2302",
     "commitName": "Feat: Agregando descuento del 10% al precio de 10000",
     "commitTimestamp": 1789011873151,
     "testId": 20
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 1,
+    "numTotalTests": 11,
+    "timestamp": 1789011910705,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1789011915599,
+    "success": true,
+    "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: Agregando descuento del 15% al precio de 30000",
+    "commitTimestamp": 1789011932622,
+    "testId": 21
   }
 ]

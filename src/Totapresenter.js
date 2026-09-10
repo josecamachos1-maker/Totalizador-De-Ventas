@@ -14,6 +14,8 @@ const MensajeConfirmacion = document.querySelector("#Mensaje-confirmacion");
 const Categoria = document.querySelector("#Categoria-producto");
 const DescuentoCategoria = document.querySelector("#DescuentoCategoria-div");
 const ImpuestoCategoria = document.querySelector("#ImpuestoCategoria-div");
+const Peso = document.querySelector("#Peso-numero");
+const CostoEnvio = document.querySelector("#CostoEnvio-div");
 
 let totalizador = new Totalizador();
 
@@ -22,6 +24,7 @@ function mostrarResultados() {
   Confirmar.disabled = false;
   MensajeConfirmacion.textContent = "";
 
+  const peso = Number(Peso.value);
   const precio = Number.parseFloat(Producto.value);
   const cantidad = Number(Cantidad.value);
   const codigo = Estado.value;
@@ -38,6 +41,7 @@ function mostrarResultados() {
     Impuesto.value = "";
     ImpuestoCategoria.value = "";
     PrecioTotal.value = "";
+    CostoEnvio.value = "";
 
     return;
   }
@@ -52,6 +56,7 @@ function mostrarResultados() {
     PrecioTotal.value = "";
     DescuentoCategoria.value = "";
     ImpuestoCategoria.value = "";
+    CostoEnvio.value = "";
 
     return;
   }
@@ -65,6 +70,7 @@ function mostrarResultados() {
     PrecioTotal.value = "";
     DescuentoCategoria.value = "";
     ImpuestoCategoria.value = "";
+    CostoEnvio.value = "";
 
     return;
   }
@@ -78,6 +84,7 @@ function mostrarResultados() {
     PrecioTotal.value = "";
     DescuentoCategoria.value = "";
     ImpuestoCategoria.value = "";
+    CostoEnvio.value = "";
 
     return;
   }
@@ -91,9 +98,26 @@ function mostrarResultados() {
   PrecioTotal.value = "";
   DescuentoCategoria.value = "";
   ImpuestoCategoria.value = "";
+  CostoEnvio.value = "";
 
   return;
  }
+ if(Peso.value === "" || isNaN(peso))
+{
+    Error.textContent = "Ingrese el peso volumétrico.";
+
+    CostoEnvio.value = "";
+
+    return;
+}
+if(peso < 0)
+{
+    Error.textContent = "El peso volumétrico no puede ser negativo.";
+
+    CostoEnvio.value = "";
+
+    return;
+}
 
     const neto = totalizador.PrecioNeto(precio, cantidad);
 
@@ -120,6 +144,9 @@ function mostrarResultados() {
 
     ImpuestoCategoria.value =
       impuestoCategoriaCalculado.toFixed(2);
+
+    const costoEnvioCalculado = totalizador.CostoEnvio(peso);
+    CostoEnvio.value = costoEnvioCalculado.toFixed(2);
 
     const total =
       neto
@@ -150,6 +177,9 @@ function cancelarCompra()
   Error.textContent = "";
   MensajeConfirmacion.textContent = "";
 
+  Peso.value = "";
+  CostoEnvio.value = "";
+
   Confirmar.disabled = false;
 }
 
@@ -178,3 +208,4 @@ Estado.addEventListener("change", mostrarResultados);
 Cancelar.addEventListener("click", cancelarCompra);
 Confirmar.addEventListener("click", confirmarCompra);
 Categoria.addEventListener("change", mostrarResultados);
+Peso.addEventListener("input", mostrarResultados);

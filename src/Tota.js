@@ -190,6 +190,10 @@ DescuentoEnvioCliente(TipoCliente, CostoEnvio)
 {
     descuento = 0.01;
 }
+if(TipoCliente == "Especial")
+{
+    descuento = 0.015;
+}
 
     return Number((CostoEnvio * descuento).toFixed(2));
 }

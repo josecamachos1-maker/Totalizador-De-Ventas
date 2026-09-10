@@ -37,12 +37,16 @@ class Totalizador
 
     Descuento(Neto)
     {
-        
+
     let descuento = 0;
 
     if(Neto >= 1000)
     {
         descuento = 0.03;
+    }
+    if(Neto >= 3000)
+    {
+        descuento = 0.05;
     }
 
     return Neto * descuento;

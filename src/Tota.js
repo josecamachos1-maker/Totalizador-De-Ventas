@@ -90,5 +90,17 @@ class Totalizador
         return false;
     }
 
+    DescuentoCategoria(Categoria, Neto)
+    {
+        let descuento = 0;
+
+        if(Categoria == "Alimentos")
+        {
+            descuento = 0.02;
+        }    
+
+        return Number((Neto * descuento).toFixed(2));
+    }
+
 }
 export {Totalizador}

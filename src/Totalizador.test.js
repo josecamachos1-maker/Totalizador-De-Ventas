@@ -129,3 +129,13 @@ it("No deberia permitir confirmar una compra con cantidad invalida", () => {
 
   expect(totalizador.PuedeConfirmar(20, 0)).toEqual(false);
 });
+
+describe("DescuentoCategoria", () => {
+
+  it("Deberia aplicar 2% de descuento adicional a Alimentos", () => {
+    let totalizador = new Totalizador();
+
+    expect(totalizador.DescuentoCategoria("Alimentos", 1000)).toEqual(20);
+  });
+
+});

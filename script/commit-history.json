@@ -551,12 +551,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5a60ee9048ff242698d311c179e8a6213720aadc",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T04:32:02.000Z",
       "message": "Feat: agregando funcionalidad para confirmar compra en html",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/5a60ee9048ff242698d311c179e8a6213720aadc"
     },
     "stats": {
       "total": 42,
@@ -566,6 +566,25 @@
     },
     "coverage": 100,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T04:55:51.000Z",
+      "message": "Agregando funcionalidad de Descuento por categoria de alimentos",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 23,
+      "deletions": 1,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

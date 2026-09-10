@@ -53,3 +53,9 @@ it("Deberia aplicar 5% de descuento cuando el precio neto es 3000", () => {
 
   expect(totalizador.Descuento(3000)).toEqual(150);
 });
+
+it("Deberia aplicar 7% de descuento cuando el precio neto es 7000", () => {
+  let totalizador = new Totalizador();
+
+  expect(totalizador.Descuento(7000)).toEqual(490);
+});

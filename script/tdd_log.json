@@ -508,9 +508,39 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9881eb39e6aaf85f03a8d902f029169a917fe13b",
     "commitName": "Feat: Agregando descuento del 5% al precio de 3000",
     "commitTimestamp": 1789011598204,
     "testId": 18
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 1,
+    "numTotalTests": 9,
+    "timestamp": 1789011667775,
+    "success": false,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 1,
+    "numTotalTests": 9,
+    "timestamp": 1789011685190,
+    "success": false,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1789011787969,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: Agregando descuento del 7% al precio de 7000",
+    "commitTimestamp": 1789011812101,
+    "testId": 19
   }
 ]

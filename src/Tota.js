@@ -98,9 +98,15 @@ class Totalizador
         {
             descuento = 0.02;
         }    
+        if(Categoria == "Material de escritorio")
+        {
+            descuento = 0.015;
+        }
 
         return Number((Neto * descuento).toFixed(2));
+        
     }
+    
 
 }
 export {Totalizador}

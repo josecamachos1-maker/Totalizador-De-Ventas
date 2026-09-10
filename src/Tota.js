@@ -35,5 +35,18 @@ class Totalizador
         return tasa * Neto;
     }
 
+    Descuento(Neto)
+    {
+        
+    let descuento = 0;
+
+    if(Neto >= 1000)
+    {
+        descuento = 0.03;
+    }
+
+    return Neto * descuento;
+    }
+
 }
 export {Totalizador}

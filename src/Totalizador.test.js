@@ -39,3 +39,11 @@ it("Deberia calcular el impuesto para CA", () => {
 
   expect(totalizador.Impuesto("CA", 100)).toEqual(8.25);
 });
+
+describe("Descuento", () => {
+  it("Deberia aplicar 3% de descuento cuando el precio neto es 1000", () => {
+    let totalizador = new Totalizador();
+
+    expect(totalizador.Descuento(1000)).toEqual(30);
+  });
+});

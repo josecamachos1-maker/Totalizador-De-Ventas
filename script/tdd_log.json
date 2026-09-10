@@ -464,9 +464,31 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a2a5186661f2b04c0e5245df096e04ad6638dd94",
     "commitName": "Feat: Agregando html y funcionalidad de impuestos",
     "commitTimestamp": 1789011187908,
     "testId": 16
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1789011413845,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1789011439408,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: Agregando descuento del 3% al precio de 1000",
+    "commitTimestamp": 1789011501881,
+    "testId": 17
   }
 ]

@@ -126,6 +126,10 @@ class Totalizador
         {
             impuesto = 0.04;
         }
+        if(Categoria == "Vestimenta")
+        {
+            impuesto = 0.02;
+        }
 
         return Number((Neto * impuesto).toFixed(2));
     }

@@ -200,3 +200,15 @@ describe("ImpuestoCategoria", () => {
   });
 
 });
+
+describe("ImpuestoCategoria", () => {
+
+  it("Deberia aplicar 2% de impuesto adicional a Vestimenta", () => {
+    let totalizador = new Totalizador();
+
+    expect(
+      totalizador.ImpuestoCategoria("Vestimenta", 1000)
+    ).toEqual(20);
+  });
+
+});

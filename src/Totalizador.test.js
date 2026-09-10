@@ -155,3 +155,11 @@ it("Deberia aplicar 1% de descuento adicional a Electronicos", () => {
     totalizador.DescuentoCategoria("Electronicos", 1000)
   ).toEqual(10);
 });
+
+it("Deberia retornar 0 de descuento adicional para Varios", () => {
+  let totalizador = new Totalizador();
+
+  expect(
+    totalizador.DescuentoCategoria("Varios", 1000)
+  ).toEqual(0);
+});

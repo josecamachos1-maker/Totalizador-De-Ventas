@@ -608,12 +608,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4c69775a170e6cdcca9f6e0798752b76d9ad615b",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T04:58:23.000Z",
       "message": "Agregando funcionalidad de Descuento por categoria de Electronicos",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/4c69775a170e6cdcca9f6e0798752b76d9ad615b"
     },
     "stats": {
       "total": 12,
@@ -623,6 +623,25 @@
     },
     "coverage": 100,
     "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T05:00:17.000Z",
+      "message": "feat: Para descuento adicional de varios descuenta 0",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 23,
     "failed_tests": 0,
     "conclusion": "success"
   }

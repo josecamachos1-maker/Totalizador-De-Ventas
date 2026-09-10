@@ -74,11 +74,7 @@ function mostrarResultados() {
 
     const descuentoCalculado = totalizador.Descuento(neto);
     Descuento.value = descuentoCalculado.toFixed(2);
-    const precioConDescuento = neto - descuentoCalculado;
-
-    
-
-    
+    const precioConDescuento = neto - descuentoCalculado - descuentoCategoriaCalculado;
 
     const impuestoCalculado = totalizador.Impuesto(
       codigo,
@@ -86,11 +82,18 @@ function mostrarResultados() {
     );
     Impuesto.value = impuestoCalculado.toFixed(2);
 
-    const total = totalizador.PrecioTotal(
-      neto,
-      descuentoCalculado,
-      impuestoCalculado
-    );
+    const impuestoCategoriaCalculado =
+      totalizador.ImpuestoCategoria(categoria, precioConDescuento);
+
+    ImpuestoCategoria.value =
+      impuestoCategoriaCalculado.toFixed(2);
+
+    const total =
+      neto
+      - descuentoCalculado
+      - descuentoCategoriaCalculado
+      + impuestoCalculado
+      + impuestoCategoriaCalculado;
 
     PrecioTotal.value = total.toFixed(2);
 
@@ -140,3 +143,4 @@ Cantidad.addEventListener("input", mostrarResultados);
 Estado.addEventListener("change", mostrarResultados);
 Cancelar.addEventListener("click", cancelarCompra);
 Confirmar.addEventListener("click", confirmarCompra);
+Categoria.addEventListener("change", mostrarResultados);

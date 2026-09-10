@@ -19,12 +19,28 @@ let totalizador = new Totalizador();
 
 function mostrarResultados() {
 
+  Confirmar.disabled = false;
+  MensajeConfirmacion.textContent = "";
+
   const precio = Number.parseFloat(Producto.value);
-  const cantidad = Number.parseInt(Cantidad.value);
+  const cantidad = Number(Cantidad.value);
   const codigo = Estado.value;
   const categoria = Categoria.value;
 
   Error.textContent = "";
+
+  if (isNaN(precio) || isNaN(cantidad) || Producto.value === "" || Cantidad.value === "") {
+    Error.textContent = "Ingrese un precio y una cantidad.";
+
+    PrecioNeto.value = "";
+    Descuento.value = "";
+    DescuentoCategoria.value = "";
+    Impuesto.value = "";
+    ImpuestoCategoria.value = "";
+    PrecioTotal.value = "";
+
+    return;
+  }
 
   if(precio <= 0 && cantidad <= 0)
   {
@@ -34,6 +50,8 @@ function mostrarResultados() {
     Descuento.value = "";
     Impuesto.value = "";
     PrecioTotal.value = "";
+    DescuentoCategoria.value = "";
+    ImpuestoCategoria.value = "";
 
     return;
   }
@@ -45,6 +63,8 @@ function mostrarResultados() {
     Descuento.value = "";
     Impuesto.value = "";
     PrecioTotal.value = "";
+    DescuentoCategoria.value = "";
+    ImpuestoCategoria.value = "";
 
     return;
   }
@@ -56,11 +76,24 @@ function mostrarResultados() {
     Descuento.value = "";
     Impuesto.value = "";
     PrecioTotal.value = "";
+    DescuentoCategoria.value = "";
+    ImpuestoCategoria.value = "";
 
     return;
   }
+  if (!Number.isInteger(cantidad))
+ {
+  Error.textContent = "La cantidad debe ser un número entero.";
 
-  if (!isNaN(precio) && !isNaN(cantidad)) {
+  PrecioNeto.value = "";
+  Descuento.value = "";
+  Impuesto.value = "";
+  PrecioTotal.value = "";
+  DescuentoCategoria.value = "";
+  ImpuestoCategoria.value = "";
+
+  return;
+ }
 
     const neto = totalizador.PrecioNeto(precio, cantidad);
 
@@ -97,25 +130,26 @@ function mostrarResultados() {
 
     PrecioTotal.value = total.toFixed(2);
 
-    
-
-  }
 
 }
 function cancelarCompra() 
 {
-
   Producto.value = "";
   Cantidad.value = "";
 
   Estado.value = "CA";
+  Categoria.value = "Varios";
 
   PrecioNeto.value = "";
   Descuento.value = "";
+  DescuentoCategoria.value = "";
   Impuesto.value = "";
+  ImpuestoCategoria.value = "";
   PrecioTotal.value = "";
 
+  Error.textContent = "";
   MensajeConfirmacion.textContent = "";
+
   Confirmar.disabled = false;
 }
 

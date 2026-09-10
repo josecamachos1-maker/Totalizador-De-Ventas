@@ -148,6 +148,10 @@ class Totalizador
         {
             return 5;
         }
+        if(peso >= 41  && peso <= 80)
+        {
+            return 6;
+        }
     }
     
 

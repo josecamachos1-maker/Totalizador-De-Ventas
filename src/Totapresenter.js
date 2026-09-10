@@ -16,6 +16,7 @@ const DescuentoCategoria = document.querySelector("#DescuentoCategoria-div");
 const ImpuestoCategoria = document.querySelector("#ImpuestoCategoria-div");
 const Peso = document.querySelector("#Peso-numero");
 const CostoEnvio = document.querySelector("#CostoEnvio-div");
+const CostoEnvioTotal = document.querySelector("#CostoEnvioTotal-div");
 
 let totalizador = new Totalizador();
 
@@ -42,6 +43,7 @@ function mostrarResultados() {
     ImpuestoCategoria.value = "";
     PrecioTotal.value = "";
     CostoEnvio.value = "";
+    CostoEnvioTotal.value = "";
 
     return;
   }
@@ -57,6 +59,7 @@ function mostrarResultados() {
     DescuentoCategoria.value = "";
     ImpuestoCategoria.value = "";
     CostoEnvio.value = "";
+    CostoEnvioTotal.value = "";
 
     return;
   }
@@ -71,6 +74,7 @@ function mostrarResultados() {
     DescuentoCategoria.value = "";
     ImpuestoCategoria.value = "";
     CostoEnvio.value = "";
+    CostoEnvioTotal.value = "";
 
     return;
   }
@@ -85,6 +89,7 @@ function mostrarResultados() {
     DescuentoCategoria.value = "";
     ImpuestoCategoria.value = "";
     CostoEnvio.value = "";
+    CostoEnvioTotal.value = "";
 
     return;
   }
@@ -99,6 +104,7 @@ function mostrarResultados() {
   DescuentoCategoria.value = "";
   ImpuestoCategoria.value = "";
   CostoEnvio.value = "";
+  CostoEnvioTotal.value = "";
 
   return;
  }
@@ -151,6 +157,13 @@ const costoEnvioCalculado = totalizador.CostoEnvio(peso);
 
 CostoEnvio.value = costoEnvioCalculado.toFixed(2);
 
+const costoEnvioTotalCalculado =
+  totalizador.CostoEnvioTotal(cantidad, costoEnvioCalculado);
+
+CostoEnvioTotal.value =
+  costoEnvioTotalCalculado.toFixed(2);
+
+
     const total =
       neto
       - descuentoCalculado
@@ -182,6 +195,7 @@ function cancelarCompra()
 
   Peso.value = "";
   CostoEnvio.value = "";
+  CostoEnvioTotal.value = "";
 
   Confirmar.disabled = false;
 }

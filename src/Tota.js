@@ -133,6 +133,14 @@ class Totalizador
 
         return Number((Neto * impuesto).toFixed(2));
     }
+
+    CostoEnvio(peso)
+    {
+        if(peso >= 0 && peso <= 10)
+        {
+            return 0;
+        }
+    }
     
 
 }

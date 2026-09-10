@@ -212,3 +212,14 @@ describe("ImpuestoCategoria", () => {
   });
 
 });
+
+
+describe("CostoEnvio", () => {
+
+  it("Deberia retornar 0 si el peso esta entre 0 y 10", () => {
+    let totalizador = new Totalizador();
+
+    expect(totalizador.CostoEnvio(10)).toEqual(0);
+  });
+
+});

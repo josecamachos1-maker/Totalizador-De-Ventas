@@ -636,9 +636,47 @@
     "testId": 25
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9d3da1e1943fa096e94b46f87c566116e528c5c4",
     "commitName": "Feat: Se agrego la funcionalidad de poder cancelar la compra",
     "commitTimestamp": 1789013776327,
     "testId": 26
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1789013892026,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 0,
+    "numTotalTests": 14,
+    "timestamp": 1789013913419,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1789013937687,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1789013948256,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregando funcionalidad si los valores ingresados son incorectos",
+    "commitTimestamp": 1789014112555,
+    "testId": 27
   }
 ]

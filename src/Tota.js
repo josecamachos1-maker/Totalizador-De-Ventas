@@ -70,5 +70,15 @@ class Totalizador
         return Number((Neto - Descuento + Impuesto).toFixed(2));
     }
 
+    ValidarDatos(precio, cantidad)
+    {
+    if(Number.isNaN(precio) || Number.isNaN(cantidad))
+    {
+        return false;
+    }
+
+    return true;
+    }
+
 }
 export {Totalizador}

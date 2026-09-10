@@ -494,12 +494,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9d3da1e1943fa096e94b46f87c566116e528c5c4",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T04:16:15.000Z",
       "message": "Feat: Se agrego la funcionalidad de poder cancelar la compra",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/9d3da1e1943fa096e94b46f87c566116e528c5c4"
     },
     "stats": {
       "total": 30,
@@ -509,6 +509,25 @@
     },
     "coverage": 100,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T04:21:51.000Z",
+      "message": "feat: agregando funcionalidad si los valores ingresados son incorectos",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 32,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 16,
     "failed_tests": 0,
     "conclusion": "success"
   }

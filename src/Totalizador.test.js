@@ -85,3 +85,25 @@ describe("PrecioTotal", () => {
     expect(totalizador.PrecioTotal(1000, 30, 60.63)).toEqual(1030.63);
   });
 });
+
+describe("ValidarDatos", () => {
+
+  it("Deberia detectar un precio invalido", () => {
+    let totalizador = new Totalizador();
+
+    expect(totalizador.ValidarDatos(NaN, 2)).toEqual(false);
+  });
+
+});
+
+it("Deberia detectar una cantidad invalida", () => {
+  let totalizador = new Totalizador();
+
+  expect(totalizador.ValidarDatos(20, NaN)).toEqual(false);
+});
+
+it("Deberia aceptar precio y cantidad validos", () => {
+  let totalizador = new Totalizador();
+
+  expect(totalizador.ValidarDatos(20, 3)).toEqual(true);
+});

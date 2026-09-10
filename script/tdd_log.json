@@ -348,9 +348,45 @@
     "testId": 10
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f8b79dac8677606eee736bc8302c1b895fb429d9",
     "commitName": "feat: Se agrego impuesto para UT",
     "commitTimestamp": 1789007571049,
     "testId": 10
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1789007655742,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1789007671569,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1789007681517,
+    "success": true,
+    "testId": 11
+  },
+  {
+    "commitId": "f8b79dac8677606eee736bc8302c1b895fb429d9",
+    "commitName": "Se agrego impuesto para NV",
+    "commitTimestamp": 1789007712987,
+    "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: Se agrego impuesto para NV",
+    "commitTimestamp": 1789008755995,
+    "testId": 12
   }
 ]

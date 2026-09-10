@@ -16,3 +16,9 @@ describe("Impuesto", () => {
   });
 });
 
+it("Deberia calcular el impuesto para NV", () => {
+  let totalizador = new Totalizador();
+
+  expect(totalizador.Impuesto("NV", 100)).toEqual(8);
+});
+

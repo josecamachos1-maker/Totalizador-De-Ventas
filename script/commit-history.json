@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f8b79dac8677606eee736bc8302c1b895fb429d9",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T02:32:50.000Z",
       "message": "feat: Se agrego impuesto para UT",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/f8b79dac8677606eee736bc8302c1b895fb429d9"
     },
     "stats": {
       "total": 20,
@@ -205,6 +205,44 @@
     },
     "coverage": 100,
     "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f8b79dac8677606eee736bc8302c1b895fb429d9",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T02:35:12.000Z",
+      "message": "Se agrego impuesto para NV",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/f8b79dac8677606eee736bc8302c1b895fb429d9"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T02:52:16.000Z",
+      "message": "Feat: Se agrego impuesto para NV",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }

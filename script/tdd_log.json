@@ -618,9 +618,15 @@
     "testId": 23
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6d85789d9d9f4288ea7b76606e336c3cdc60eba7",
     "commitName": "Feat: implementacion de Precio Total",
     "commitTimestamp": 1789012735289,
     "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: implementacion de html de Precio total",
+    "commitTimestamp": 1789012874707,
+    "testId": 24
   }
 ]

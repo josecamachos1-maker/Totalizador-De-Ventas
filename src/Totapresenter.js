@@ -6,6 +6,7 @@ const PrecioNeto = document.querySelector("#PrecioNeto-div");
 const Estado = document.querySelector("#Estado-codigo");
 const Impuesto = document.querySelector("#Impuesto-div");
 const Descuento = document.querySelector("#Descuento-div");
+const PrecioTotal = document.querySelector("#PrecioTotal-div");
 
 let totalizador = new Totalizador();
 
@@ -30,7 +31,14 @@ function mostrarResultados() {
       precioConDescuento
     );
     Impuesto.value = impuestoCalculado.toFixed(2);
+    
+    const total = totalizador.PrecioTotal(
+      neto,
+      descuentoCalculado,
+      impuestoCalculado
+    );
 
+    PrecioTotal.value = total.toFixed(2);
     
 
   }

@@ -437,16 +437,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6d85789d9d9f4288ea7b76606e336c3cdc60eba7",
     "author": "pochis",
     "commit": {
       "date": "2026-09-10T03:58:54.000Z",
       "message": "Feat: implementacion de Precio Total",
-      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/6d85789d9d9f4288ea7b76606e336c3cdc60eba7"
     },
     "stats": {
       "total": 13,
       "additions": 13,
+      "deletions": 0,
+      "date": "2026-09-10"
+    },
+    "coverage": 100,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "pochis",
+    "commit": {
+      "date": "2026-09-10T04:01:13.000Z",
+      "message": "Feat: implementacion de html de Precio total",
+      "url": "https://github.com/josecamachos1-maker/Totalizador-De-Ventas/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
       "deletions": 0,
       "date": "2026-09-10"
     },

@@ -134,37 +134,45 @@ class Totalizador
         return Number((Neto * impuesto).toFixed(2));
     }
 
-    CostoEnvio(peso)
+    CostoEnvio(Peso)
+{
+    if(Peso < 0)
     {
-        if(peso >= 0 && peso <= 10)
-        {
-            return 0;
-        }
-        if(peso >= 11 && peso <= 20)
-        {
-            return 3.5;
-        }
-        if(peso >= 21 && peso <= 40)
-        {
-            return 5;
-        }
-        if(peso >= 41  && peso <= 80)
-        {
-            return 6;
-        }
-        if(peso >= 81 && peso <= 100)
-        {
-            return 6.5;
-        }
-        if(peso >= 101 && peso <= 200)
-        {
-            return 8;
-        }
-        if(peso > 200)
-        {
-            return 9;
-        }
+        return 0;
     }
+
+    if(Peso <= 10)
+    {
+        return 0;
+    }
+
+    if(Peso <= 20)
+    {
+        return 3.5;
+    }
+
+    if(Peso <= 40)
+    {
+        return 5;
+    }
+
+    if(Peso <= 80)
+    {
+        return 6;
+    }
+
+    if(Peso <= 100)
+    {
+        return 6.5;
+    }
+
+    if(Peso <= 200)
+    {
+        return 8;
+    }
+
+    return 9;
+}
     
 
 }

@@ -140,6 +140,10 @@ class Totalizador
         {
             return 0;
         }
+        if(peso >= 11 && peso <= 20)
+        {
+            return 3.5;
+        }
     }
     
 

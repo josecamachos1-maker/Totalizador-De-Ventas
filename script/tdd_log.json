@@ -802,5 +802,21 @@
     "commitName": "feat: Para descuento adicional de varios descuenta 0",
     "commitTimestamp": 1789016417993,
     "testId": 33
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1789016846644,
+    "success": false,
+    "testId": 34
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1789016875579,
+    "success": true,
+    "testId": 34
   }
 ]

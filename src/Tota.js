@@ -110,6 +110,17 @@ class Totalizador
         return Number((Neto * descuento).toFixed(2));
         
     }
+    ImpuestoCategoria(Categoria, Neto)
+    {
+        let impuesto = 0;
+
+        if(Categoria == "Bebidas alcoholicas")
+        {
+            impuesto = 0.07;
+        }
+
+        return Number((Neto * impuesto).toFixed(2));
+    }
     
 
 }

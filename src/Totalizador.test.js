@@ -163,3 +163,15 @@ it("Deberia retornar 0 de descuento adicional para Varios", () => {
     totalizador.DescuentoCategoria("Varios", 1000)
   ).toEqual(0);
 });
+
+describe("ImpuestoCategoria", () => {
+
+  it("Deberia aplicar 7% de impuesto adicional a Bebidas alcoholicas", () => {
+    let totalizador = new Totalizador();
+
+    expect(
+      totalizador.ImpuestoCategoria("Bebidas alcoholicas", 1000)
+    ).toEqual(70);
+  });
+
+});
